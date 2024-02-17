@@ -1,0 +1,194 @@
+main > div > section > aside > *, main > div > section > * {
+  border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #4353ff;
+  position: relative;
+}
+main > div {
+  width: 380px;
+  transform: translate(-50%, -50%) rotateX(55deg) rotateY(-3deg) rotateZ(49deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+main > div > header {
+  background-color: #b4baff;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 2px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  display: flex;
+}
+main > div > header > span {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 9px 0 9px 20px;
+  position: relative;
+}
+main > div > header > span::before, main > div > header > span::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+main > div > header > span::before {
+  left: -200%;
+}
+main > div > header > span::after {
+  left: 200%;
+}
+main > div > header > div {
+  width: 80px;
+  height: 80px;
+  top: -66px;
+  left: 40px;
+  position: absolute;
+  perspective: 800px;
+  transform: translate(0, 0);
+  transition: 0.4s ease;
+}
+main > div > header > div > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(213, 216, 255, 0.8);
+  transform: translate3d(0px, 0px, 10px);
+  background-image: linear-gradient(315deg, hsla(0, 0%, 100%, 0.22), hsla(0, 0%, 100%, 0));
+  position: absolute;
+  left: -23px;
+  top: -4px;
+  margin: 0 auto;
+  z-index: 5;
+}
+main > div > header > div > div:nth-of-type(2) {
+  left: -6px;
+  top: 10px;
+  z-index: 4;
+  transform: translate3d(0px, 0px, 10px);
+}
+main > div > header > div > div:nth-of-type(3) {
+  transform: translate3d(0px, 0px, 0px);
+  left: 10px;
+  top: 23px;
+  z-index: 3;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #5d6bff, hsla(0, 0%, 100%, 0.76));
+  box-shadow: 23px 19px 0 0 rgba(67, 83, 255, 0.26);
+}
+main > div > header > div:hover {
+  transform: translate(-4px, -4px);
+}
+main > div > section {
+  width: 100%;
+  height: 730px;
+  background: linear-gradient(159deg, #9aa3ff, #4353ff 77%);
+  display: flex;
+}
+main > div > section > aside {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+main > div > section > aside > * {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bolder;
+  line-height: 8px;
+}
+main > div > section > aside > p {
+  width: 65%;
+  margin: 30px auto;
+  display: flex;
+  text-align: justify;
+}
+main > div > section > aside > div:nth-of-type(1) {
+  width: 140px;
+  height: 140px;
+  top: 120px;
+  left: -15px;
+  position: absolute;
+  perspective: 800px;
+  transform: translate(0, 0);
+  transition: 0.5s ease;
+}
+main > div > section > aside > div:nth-of-type(1) > div {
+  width: 70px;
+  height: 70px;
+  border-radius: 0 3px 3px 3px;
+  transform: translate3d(0px, 0px, 20px);
+  background-image: linear-gradient(135deg, rgba(116, 129, 255, 0.7), rgba(166, 173, 255, 0.7));
+  position: absolute;
+  left: -38px;
+  top: -14px;
+  margin: 0 auto;
+  z-index: 5;
+  border: 2px solid #fff;
+  transition: 0.5s ease;
+}
+main > div > section > aside > div:nth-of-type(1) > div:nth-of-type(1)::before {
+  content: "";
+  background-color: #fff;
+  width: 35%;
+  height: 5px;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  top: -6px;
+  left: -1.5px;
+}
+main > div > section > aside > div:nth-of-type(1) > div:nth-of-type(1) > .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+main > div > section > aside > div:nth-of-type(1) > div:nth-of-type(2) {
+  background-color: rgba(178, 185, 255, 0.7);
+  left: -16px;
+  top: 5px;
+  z-index: 4;
+  transform: translate3d(0px, 0px, 20px);
+  border: none;
+}
+main > div > section > aside > div:nth-of-type(1) > div:nth-of-type(3) {
+  border: none;
+  transform: translate3d(0px, 0px, 10px);
+  left: 6px;
+  top: 24px;
+  z-index: 3;
+  background-color: transparent;
+  background-image: linear-gradient(315deg, #929bff, #828dff);
+  box-shadow: 23px 19px 0 0 rgba(67, 83, 255, 0.26);
+}
+main > div > section > aside > div:nth-of-type(1):hover > div:nth-of-type(1) {
+  left: -46px;
+  top: -22px;
+}
+main > div > section > aside > div:nth-of-type(1):hover > div:nth-of-type(2) {
+  left: -20px;
+  top: 1px;
+}
+main > div > section > aside > div:nth-of-type(1):hover > div:nth-of-type(3) {
+  left: 4px;
+  top: 22px;
+  box-shadow: 22px 18px 0 0 rgba(67, 83, 255, 0.26);
+}
+main > div > section > section {
+  width: 60%;
+  height: 100%;
+}/*# sourceMappingURL=master.css.map */
